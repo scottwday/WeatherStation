@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{936D20C5-AA06-4C00-8B8F-A139B16CE478}</ProjectGuid>
+    <RootNamespace>WeatherStation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic;C:\Users\user\Documents\Arduino\WeatherStation;C:\Users\user\Documents\Arduino\libraries\EspSoftSerial;C:\Users\user\Documents\Arduino\libraries\EspSoftSerial\utility;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\libraries\Wire;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\libraries\Wire\utility;C:\Arduino\src\Arduino\build\windows\work\libraries;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\user\Documents\Arduino\libraries;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic;C:\Users\user\Documents\Arduino\libraries\EspSoftSerial;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\libraries\Wire;C:\Arduino\src\Arduino\build\windows\work\libraries;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\user\Documents\Arduino\libraries;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9\xtensa-lx106-elf\include\c++\4.8.2;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9\xtensa-lx106-elf\include;C:\Users\user\AppData\Roaming\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9\lib\gcc\xtensa-lx106-elf\4.8.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\user\Documents\Arduino\WeatherStation\Visual Micro\.WeatherStation.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__ESP8266_ESp8266__;__ESP8266_ESP8266__;__ets__;ICACHE_FLASH;F_CPU=80000000L;ARDUINO=160;ARDUINO_ESP8266_ESP01;ARDUINO_ARCH_ESP8266;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="WeatherStation.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bma180.h" />
+    <ClInclude Include="bmp085.h" />
+    <ClInclude Include="imu.h" />
+    <ClInclude Include="ublox.h" />
+    <ClInclude Include="Visual Micro\.WeatherStation.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bma180.cpp" />
+    <ClCompile Include="bmp085.cpp" />
+    <ClCompile Include="imu.cpp" />
+    <ClCompile Include="ublox.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM21" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
